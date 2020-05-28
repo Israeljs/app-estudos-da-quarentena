@@ -1,0 +1,25 @@
+no vs code: eslint, prettier e editorconfig
+
+npm i -D eslint prettier
+
+yarn eslint --init
+
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? CommonJS (require/exports)
+? Which framework does your project use? None of these
+? Does your project use TypeScript? No
+? Where does your code run? Browser
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? Standard: https://github.com/standard/standard
+? What format do you want your config file to be in? JavaScript
+? Would you like to install them now with npm? Yes
+
+yarn add -D eslit-config-prettier eslint-plugin-prettier
+
+end_of_line = lf (no .editorconfig para windows)
+
+npx sequelize-cli seed:generate --name usuario/yarn sequelize seed:generate --name tipoMaterial
+
+/yarn sequelize db:seed:all
+
+yarn sequelize db:migrate:undo:all
