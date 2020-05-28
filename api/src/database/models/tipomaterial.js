@@ -3,7 +3,16 @@ module.exports = (sequelize, DataTypes) => {
   const tipoMaterial = sequelize.define(
     'tipomaterial',
     {
-      material: DataTypes.STRING,
+      id: {
+        allowNull: false,
+        primaryKey: true,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+      },
+      material: {
+        type: DataTypes.STRING(45),
+        allowNull: false,
+      },
     },
     {}
   )
